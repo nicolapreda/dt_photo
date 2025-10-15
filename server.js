@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 // Avvio del server
-const PORT = process.env.PORT || 3004;
+const PORT = process.env.PORT || 3005;
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 DT Photo Portfolio attivo su http://0.0.0.0:${PORT}`);
   console.log(`📸 Portfolio del fotografo DT Photo`);
