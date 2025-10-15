@@ -1,0 +1,26 @@
+{
+  "name": "dt-photo-website",
+  "version": "1.0.0",
+  "description": "DT Photo - Fotografo specializzato in discoteche e vita notturna",
+  "license": "ISC",
+  "author": "DT Photo",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./public/assets/style.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./public/assets/style.css --minify",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "googleapis": "^162.0.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.1"
+  }
+}

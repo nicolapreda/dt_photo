@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TITLE E META DESCRIPTION OTTIMIZZATI -->
+    <title>DT Photo - Fotografo Professionista | Discoteche & Eventi Notturni</title>
+    <meta name="description"
+        content="DT Photo - Fotografo specializzato in discoteche e vita notturna. Portfolio e servizi fotografici professionali." />
+    <meta name="keywords"
+        content="fotografo discoteca, fotografia notturna, eventi party, photography clubbing, DT Photo, fotografo professionista" />
+
+    <!-- META ROBOT E CANONICAL -->
+    <meta name="robots"
+        content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://www.dtphoto.it/" />
+
+    <!-- AUTHOR E PUBLISHER -->
+    <meta name="author" content="DT Photo" />
+    <meta name="publisher" content="DT Photo" />
+
+    <!-- GEO TARGETING -->
+    <meta name="geo.region" content="IT" />
+    <meta name="geo.placename" content="Italia" />
+    <meta name="language" content="Italian" />
+
+    <!-- OPEN GRAPH OTTIMIZZATO -->
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title"
+        content="DT Photo - Fotografo Professionista | Discoteche & Eventi" />
+    <meta property="og:description"
+        content="Fotografo specializzato in discoteche e vita notturna. Portfolio e servizi fotografici professionali." />
+    <meta property="og:url" content="https://www.dtphoto.it/" />
+    <meta property="og:site_name" content="DT Photo" />
+    <meta property="og:image"
+        content="https://www.dtphoto.it/assets/logo.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt"
+        content="DT Photo - Fotografo Professionista" />
+
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+        content="DT Photo - Fotografo Professionista" />
+    <meta name="twitter:description"
+        content="Fotografo specializzato in discoteche e vita notturna. Portfolio e servizi fotografici professionali." />
+    <meta name="twitter:image"
+        content="https://www.dtphoto.it/assets/logo.jpg" />
+
+    <!-- SCHEMA.ORG STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "DT Photo",
+        "jobTitle": "Fotografo Professionista",
+        "description": "Fotografo specializzato in discoteche e vita notturna, eventi party e fotografia artistica",
+        "url": "https://www.dtphoto.it",
+        "image": "https://www.dtphoto.it/assets/logo.jpg",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "business",
+            "areaServed": "IT",
+            "availableLanguage": "Italian"
+        },
+        "serviceType": ["Fotografia Discoteche", "Eventi Notturni", "Ritratti Artistici", "Fotografia Party"],
+        "areaServed": {
+            "@type": "Country",
+            "name": "Italia"
+        }
+    }
+    </script>
+
+    <!-- FONTS -->
+    <!-- Using system Helvetica font stack -->
+    
+    <!-- CSS E RISORSE -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+                        'sans': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        'dt-black': '#000000',
+                        'dt-white': '#FFFFFF',
+                        'dt-gray': '#1a1a1a',
+                        'dt-gray-light': '#333333',
+                        'dt-gray-lighter': '#666666',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'scale-in': 'scaleIn 0.5s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        scaleIn: {
+                            '0%': { transform: 'scale(0.9)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="./assets/logo.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="./assets/logo.jpg" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: #000000;
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        
+        .hero-image {
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .gallery-item {
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .text-huge {
+            font-size: clamp(3rem, 8vw, 8rem);
+            line-height: 0.9;
+            font-weight: 700;
+        }
+        
+        .text-large {
+            font-size: clamp(2rem, 5vw, 4rem);
+            line-height: 1.1;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-dt-black text-dt-white overflow-x-hidden">
+    
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dt-black bg-opacity-90 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-display font-bold">
+                    DT PHOTO
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-sm font-medium tracking-wide">HOME</a>
+                    <a href="#portfolio" class="nav-link text-sm font-medium tracking-wide">PORTFOLIO</a>
+                    <a href="#about" class="nav-link text-sm font-medium tracking-wide">ABOUT</a>
+                    <a href="#contact" class="nav-link text-sm font-medium tracking-wide">CONTACT</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-dt-black hidden">
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <a href="#home" class="text-2xl font-display font-bold mobile-menu-link">HOME</a>
+            <a href="#portfolio" class="text-2xl font-display font-bold mobile-menu-link">PORTFOLIO</a>
+            <a href="#about" class="text-2xl font-display font-bold mobile-menu-link">ABOUT</a>
+            <a href="#contact" class="text-2xl font-display font-bold mobile-menu-link">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative">
+        <div class="absolute inset-0">
+            <img src="./assets/dtphoto-1.jpg" alt="DT Photo" class="w-full h-full hero-image opacity-30">
+        </div>
+        
+        <div class="relative z-10 text-center max-w-6xl mx-auto px-6">
+            <div class="animate-fade-in">
+                <h1 class="text-huge font-display mb-8">
+                    HELLO, I'M<br>
+                    <span class="font-display">DT PHOTO</span>
+                </h1>
+                <p class="text-xl md:text-2xl font-light mb-12 max-w-3xl mx-auto opacity-90">
+                    A STREET PHOTOGRAPHER<br>
+                    BASED IN ITALY
+                </p>
+                
+                <div class="text-sm font-medium tracking-widest opacity-60">
+                    ©2024
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border border-white rounded-full flex justify-center opacity-60">
+                <div class="w-1 h-3 bg-white rounded-full mt-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <div class="flex items-center justify-between mb-8">
+                    <h2 class="text-large font-display">PORTFOLIO</h2>
+                    <div class="text-6xl font-display font-bold opacity-20">01</div>
+                </div>
+            </div>
+            
+            <div class="gallery-grid mb-16">
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-2.jpg" alt="Photography Work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-3.jpg" alt="Photography Work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-4.jpg" alt="Photography Work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-5.jpg" alt="Photography Work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-6.jpg" alt="Photography Work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-7.jpg" alt="Photography Work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-8.jpg" alt="Photography Work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-9.jpg" alt="Photography Work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-10.jpg" alt="Photography Work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-11.jpg" alt="Photography Work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-12.jpg" alt="Photography Work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dtphoto-13.jpg" alt="Photography Work" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="border border-white px-8 py-3 text-sm font-medium tracking-wide hover:bg-white hover:text-black transition-all duration-300">
+                    VIEW ALL WORK
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-dt-gray">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="flex items-center justify-between mb-8">
+                        <h2 class="text-large font-display">ABOUT</h2>
+                        <div class="text-6xl font-display font-bold opacity-20">02</div>
+                    </div>
+                    
+                    <div class="space-y-6 text-lg leading-relaxed">
+                        <p>
+                            Sono un fotografo specializzato nella cattura dell'energia 
+                            unica delle discoteche e della vita notturna italiana.
+                        </p>
+                        <p>
+                            Con anni di esperienza nel settore, ho sviluppato uno stile 
+                            distintivo che combina street photography con l'atmosfera 
+                            vibrante dei club e degli eventi notturni.
+                        </p>
+                        <p>
+                            Ogni scatto racconta una storia, cattura un'emozione, 
+                            immortala un momento irripetibile della notte italiana.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-12 grid grid-cols-2 gap-8">
+                        <div>
+                            <div class="text-3xl font-display font-bold mb-2">500+</div>
+                            <div class="text-sm opacity-60 tracking-wide">EVENTI FOTOGRAFATI</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-display font-bold mb-2">50+</div>
+                            <div class="text-sm opacity-60 tracking-wide">CLUB ITALIANI</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="./assets/dtphoto-14.jpg" alt="DT Photo Portrait" class="w-full aspect-[4/5] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="flex items-center justify-between mb-16">
+                <h2 class="text-large font-display">CONTACT</h2>
+                <div class="text-6xl font-display font-bold opacity-20">03</div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-display mb-8">GET IN TOUCH</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="text-sm opacity-60 tracking-wide mb-1">EMAIL</div>
+                            <div class="text-lg">info@dtphoto.it</div>
+                        </div>
+                        <div>
+                            <div class="text-sm opacity-60 tracking-wide mb-1">PHONE</div>
+                            <div class="text-lg">+39 XXX XXX XXXX</div>
+                        </div>
+                        <div>
+                            <div class="text-sm opacity-60 tracking-wide mb-1">INSTAGRAM</div>
+                            <div class="text-lg">@dtphoto_official</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="NAME" class="w-full bg-transparent border-b border-dt-gray-lighter py-3 focus:outline-none focus:border-white transition-colors">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="EMAIL" class="w-full bg-transparent border-b border-dt-gray-lighter py-3 focus:outline-none focus:border-white transition-colors">
+                        </div>
+                        <div>
+                            <textarea rows="4" placeholder="MESSAGE" class="w-full bg-transparent border-b border-dt-gray-lighter py-3 focus:outline-none focus:border-white transition-colors resize-none"></textarea>
+                        </div>
+                        <div class="pt-4">
+                            <button type="submit" class="border border-white px-8 py-3 text-sm font-medium tracking-wide hover:bg-white hover:text-black transition-all duration-300">
+                                SEND MESSAGE
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-dt-gray">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-display font-bold mb-4 md:mb-0">
+                    DT PHOTO
+                </div>
+                <div class="text-sm opacity-60">
+                    ©2024 DT Photo. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect for hero image
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-image');
+            if (hero && scrolled < window.innerHeight) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Gallery lightbox functionality (simple implementation)
+        const galleryItems = document.querySelectorAll('.gallery-item img');
+        galleryItems.forEach(img => {
+            img.addEventListener('click', () => {
+                // Create lightbox overlay
+                const lightbox = document.createElement('div');
+                lightbox.className = 'fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4';
+                lightbox.innerHTML = `
+                    <div class="relative max-w-4xl max-h-full">
+                        <img src="${img.src}" alt="${img.alt}" class="max-w-full max-h-full object-contain">
+                        <button class="absolute top-4 right-4 text-white text-3xl hover:opacity-70 transition-opacity">&times;</button>
+                    </div>
+                `;
+                
+                document.body.appendChild(lightbox);
+                
+                // Close lightbox on click
+                lightbox.addEventListener('click', (e) => {
+                    if (e.target === lightbox || e.target.tagName === 'BUTTON') {
+                        document.body.removeChild(lightbox);
+                    }
+                });
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe gallery items for animation
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(30px)';
+            item.style.transition = 'all 0.6s ease';
+            observer.observe(item);
+        });
+    </script>
+
+</body>
+</html>
+    <script>
+        // Smooth scrolling per i link interni
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Parallax effect per hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.gradient-bg');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Priorità pagine principali
+Allow: /index.html
+Allow: /prenota.html
+Allow: /privacy-policy.html
+Allow: /cookie-policy.html
+
+# Sitemap
+Sitemap: https://www.domoraimmobiliare.it/sitemap.xml
+
+# Crawl-delay (opzionale)
+Crawl-delay: 1
