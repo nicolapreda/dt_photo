@@ -1,9 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage -->
     <url>
-        <loc>https://www.domoraimmobiliare.it/</loc>
-        <lastmod>2025-09-30</lastmod>
+        <loc>https://www.dtphoto.it/</loc>
+        <lastmod>2024-10-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-1.jpg</image:loc>
+            <image:title>Daniel Turani - DT Photo Portfolio Hero</image:title>
+            <image:caption>Fotografo specializzato in discoteche e vita notturna italiana</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/logo.jpg</image:loc>
+            <image:title>DT Photo Logo - Daniel Turani</image:title>
+            <image:caption>Logo ufficiale di Daniel Turani fotografo</image:caption>
+        </image:image>
     </url>
+    
+    <!-- Portfolio -->
+    <url>
+        <loc>https://www.dtphoto.it/#portfolio</loc>
+        <lastmod>2024-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-2.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Fotografia Discoteche 1</image:title>
+            <image:caption>Lavori di fotografia notturna di Daniel Turani in discoteche italiane</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-3.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Fotografia Discoteche 2</image:title>
+            <image:caption>Street photography e vita notturna italiana by Daniel Turani</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-4.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Eventi Party</image:title>
+            <image:caption>Fotografia eventi e party esclusivi di Daniel Turani</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-5.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Vita Notturna</image:title>
+            <image:caption>Cattura dell'energia della notte italiana by DT Photo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-6.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Club Photography</image:title>
+            <image:caption>Fotografia professionale in club e discoteche</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-7.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Street Photography</image:title>
+            <image:caption>Street photography urbana e artistica di Daniel Turani</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-8.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Ritratti Artistici</image:title>
+            <image:caption>Ritratti creativi e artistici firmati DT Photo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-9.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Fotografia Notturna</image:title>
+            <image:caption>Specialista in fotografia notturna e atmosfere urbane</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-10.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Eventi Esclusivi</image:title>
+            <image:caption>Documentazione fotografica di eventi esclusivi e party</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-11.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Club Culture</image:title>
+            <image:caption>Cultura dei club e musica elettronica italiana</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-12.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Underground Scene</image:title>
+            <image:caption>Scena underground e alternative italiana documentata</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-13.jpg</image:loc>
+            <image:title>Portfolio Daniel Turani - Youth Culture</image:title>
+            <image:caption>Cultura giovanile e sociale italiana contemporanea</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- About -->
+    <url>
+        <loc>https://www.dtphoto.it/#about</loc>
+        <lastmod>2024-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://www.dtphoto.it/assets/dtphoto-14.jpg</image:loc>
+            <image:title>Daniel Turani - Fotografo Professionista Portrait</image:title>
+            <image:caption>Ritratto di Daniel Turani, fotografo specializzato in vita notturna</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Contact -->
+    <url>
+        <loc>https://www.dtphoto.it/#contact</loc>
+        <lastmod>2024-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
 </urlset>

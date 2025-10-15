@@ -1,14 +1,18 @@
 User-agent: *
 Allow: /
 
+# Daniel Turani - DT Photo Portfolio
+# Fotografo specializzato in discoteche e vita notturna italiana
+
 # Priorità pagine principali
 Allow: /index.html
-Allow: /prenota.html
-Allow: /privacy-policy.html
-Allow: /cookie-policy.html
+Allow: /assets/
 
 # Sitemap
-Sitemap: https://www.domoraimmobiliare.it/sitemap.xml
+Sitemap: https://www.dtphoto.it/sitemap.xml
 
-# Crawl-delay (opzionale)
+# Crawl-delay per rispettare i server
 Crawl-delay: 1
+
+# Host preference
+Host: https://www.dtphoto.it
