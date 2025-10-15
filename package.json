@@ -12,11 +12,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "dotenv": "^17.2.1",
-    "express": "^5.1.0",
-    "googleapis": "^162.0.0",
-    "node-telegram-bot-api": "^0.66.0",
-    "nodemon": "^3.1.10"
+    "express": "^5.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
